@@ -39,6 +39,11 @@ pipeline{
         sh 'cat /etc/passwd'
       }
     }
+    stage('sub-job4'){
+      steps{
+        echo 'welcome'
+      }
+    }
   }
 }
 
